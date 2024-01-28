@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website Layout</title>
+    <!-- <link rel="stylesheet" href="./websitelayout.css"> -->
+    <style>
+        body, .small-container {
+            display: flex;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 1em;
+            flex: 1;
+        }
+
+        .main-container {
+            flex: 5;
+        }
+
+        header, footer {
+            background-color: green;
+            padding: 1em;
+            height: 10vh;
+        }
+
+        .very-small {
+            flex: 4;
+        }
+
+        sideBar {
+            background-color: lightgray;
+            padding: 1em;
+            flex: 1;
+        }
+
+        article {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>Nav</nav>
+    <div class="main-container">
+        <header>Header</header>
+        <div class="small-container">
+            <div class="very-small">
+                <section>
+                    <article>
+                        <h1>First article</h1>
+                        <p>Tea, a globally beloved beverage, has a rich history dating back thousands of years. Originating in ancient China, it has evolved into countless varieties and cultural traditions worldwide. Whether enjoyed in traditional ceremonies or casual settings, tea remains a symbol of relaxation.</p>
+                    </article>  
+                    <article>
+                        <h1>First article</h1>
+                        <p>Tea, a globally beloved beverage, has a rich history dating back thousands of years. Originating in ancient China, it has evolved into countless varieties and cultural traditions worldwide. Whether enjoyed in traditional ceremonies or casual settings, tea remains a symbol of relaxation.</p>
+                    </article>
+                    <article>
+                        <h1>First article</h1>
+                        <p>Tea, a globally beloved beverage, has a rich history dating back thousands of years. Originating in ancient China, it has evolved into countless varieties and cultural traditions worldwide. Whether enjoyed in traditional ceremonies or casual settings, tea remains a symbol of relaxation.</p>
+                        <p>Tea, a globally beloved beverage, has a rich history dating back thousands of years. Originating in ancient China, it has evolved into countless varieties and cultural traditions worldwide. Whether enjoyed in traditional ceremonies or casual settings, tea remains a symbol of relaxation.</p>
+                    </article>
+                </section>
+                <footer>Footer</footer>
+            </div>
+            <sideBar>Aside</sideBar>
+        </div>
+    </div>
+</body>
+</html>
